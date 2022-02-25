@@ -44,3 +44,27 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+---
+
+# Techno
+
+Redux, Typescript, MongoDB
+
+# Technic Organization
+
+Table DB :
+
+- Wf | Nodes | Link | Draft ? | Notifications | Transitions | User ( Google Auth) | XML
+
+* Modals génériques en fonction du Node
+* Créer interface puis extends
+
+* Page :
+
+- Home ( refaire le APp et préparer les routes )
+- Designers
+- WF Tableau
+- Drafts Tableau
+- Task Tableau
+- Notification & Action Tableau
