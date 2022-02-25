@@ -1,0 +1,43 @@
+.nav-block {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #ffffff;
+  display: flex;
+}
+
+.nav-link {
+  color: #272833 !important;
+  padding-bottom: 0.28125rem;
+  padding-top: 0.28125rem;
+  white-space: nowrap;
+}
+.nav-link.active {
+  background: transparent !important;
+  color: #272833 !important;
+}
+.custom-nav {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.nav-link.active {
+  background: transparent !important;
+  color: #272833 !important;
+}
+
+.nav-tabs .nav-link {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: transparent transparent var(--primary) !important;
+  border-width: 2px;
+  background: #6b6c7f;
+  color: #272833 !important;
+}
+
+.nav-tabs .nav-item {
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 30px;
+}

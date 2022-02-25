@@ -1,0 +1,117 @@
+/* Pagination */
+
+.centre-pagination {
+  position: relative;
+  margin-left: calc(50% - 50px);
+  width: 50%;
+}
+
+.pagination-block {
+  /* margin: 10px 0px;
+ padding-top: 10px;
+ display: flex;
+ flex-direction: column;*/
+  display: flow-root;
+}
+
+.custom-pagination {
+  display: inline;
+  overflow: auto;
+  width: 100%;
+}
+
+.pagination-page-button {
+  background-color: var(--secondary) !important;
+  border-radius: 16px;
+  padding: 10px !important;
+  text-align: center;
+  margin-left: 5px;
+  float: left;
+  cursor: pointer;
+}
+
+.pagination-page-button-active {
+  background-color: #ffffff !important;
+  border: 1px solid var(--secondary);
+}
+
+.pagination-previous-button {
+  display: none !important;
+}
+
+.pagination-next-button {
+  text-transform: uppercase;
+  background-color: var(--secondary) !important;
+  border: 0 !important;
+  border-radius: 16px;
+  padding: 10px 40px !important;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+}
+
+li.pagination-next-button > a.pagination-button-text {
+  color: white !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+li.pagination-page-button > a.pagination-button-text {
+  color: white;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.pagination-page-button {
+  margin-right: 1%;
+}
+
+.pagination-active-button-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--secondary) !important;
+}
+
+li.next-button .pagination-button-text {
+  background: transparent !important;
+  border: 0px !important;
+}
+
+.pagination-button-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px !important;
+}
+
+/* HOVER BUTTON  */
+li.pagination-next-button:hover {
+  background-color: var(--secondary-hover) !important;
+  border: 1px solid var(--secondary-hover) !important;
+}
+li.pagination-page-button:hover {
+  background-color: var(--secondary-hover) !important;
+  border: 1px solid var(--secondary-hover) !important;
+}
+
+li.pagination-page-button-active:hover {
+  background-color: #ffffff !important;
+  border: 1px solid var(--secondary) !important;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  /* Responsive des différentes parties de la page */
+  .pagination-next-button {
+    display: none !important;
+  }
+}
+
+.pagination>li>a{
+  position: relative;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  color: #007bff;
+  line-height: 1.25;
+  margin-left: -1px;
+  padding: .5rem .75rem;
+}

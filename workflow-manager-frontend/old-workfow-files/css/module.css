@@ -1,0 +1,47 @@
+:root {
+    --primary-semi-transparent: rgba(0,62,121,0.6);
+    --info: #ecf1f7;
+    --info-hover: #b6c9e0;
+    --info-active: #cac980;
+    --shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
+    --shadow-light: 0 .5rem 1rem rgba(125,125,125,0.15);
+	--rounded-light: 16px;
+	--primary: #003E79;
+	--primary-hover: #003160;
+	--primary-active: #FFFFFF;
+	--primary-text-active: #003E79;
+	--primary-text-default: #FFFFFF;
+	--secondary: #E5224B;
+	--secondary-hover: #B81439;
+	--secondary-active: #FFFFFF;
+	--secondary-text-active: #E5224B;
+	--secondary-text-default: #FFFFFF;
+	--content-left-padding: 10%;
+}
+
+.agiir-search-text-titre-module{
+    color: var(--primary);
+    font-size: 35px;
+    font-weight: 500;
+    min-width: 100px;
+    align-self: center;
+    margin-right: 15px;
+    
+}
+
+.agiir-search-barre-titre-module{
+    background-color: var(--primary);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+
+.agiir-search-text-titre-pack{
+    margin-top: 20px;
+}
+
+
+.FormUser{
+    color : var(--primary)
+}

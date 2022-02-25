@@ -1,0 +1,30 @@
+.agiir-wf-barre{
+    display: flex;
+    justify-content: flex-end ;
+}
+.barre-buttons{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.palette-buttons{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    max-height: 40px;
+}
+/* Palette */
+
+
+
+#RightClick{
+    margin-left: 10px;
+}
+
+#button-save{
+    margin-left: 30px;
+}
+
+#palette-boutons{
+    min-width: 110px;
+    margin-bottom: 3px;
+}

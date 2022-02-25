@@ -1,0 +1,23 @@
+.app-backlink-container {
+  margin-bottom: 12px;
+  padding: 8px;
+}
+.app-backlink-container:hover {
+  margin-bottom: 10px;
+}
+.app-backlink-back-button {
+  color: var(--secondary);
+  cursor: pointer;
+  display: flex;
+}
+.app-backlink-back-button-icon {
+  margin-right: 12px;
+}
+
+.app-backlink-back-button-text {
+  font-weight: 600;
+}
+
+.app-backlink-container:hover .app-backlink-back-button-text {
+  border-bottom: 2px solid var(--secondary);
+}

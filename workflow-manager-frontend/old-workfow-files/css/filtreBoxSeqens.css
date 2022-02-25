@@ -1,0 +1,342 @@
+/*Style de la recherche*/
+.agiir-search-filterbar {
+  background-color: #ecf0f7;
+  color: #003e79;
+  display: flex;
+  min-height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.agiir-search-filterbar-first-container {
+  display: flex;
+}
+
+.agiir-search-filterbar-filters-btn {
+  text-decoration: none !important;
+  margin: 3px;
+  width: 90%;
+}
+
+.agiir-search-filterbar-filters {
+  display: inline-block;
+  margin: 5px;
+}
+
+.agiir-search-filtrerpar-text {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 500;
+  min-width: 100px;
+  align-self: center;
+  margin-right: 15px;
+}
+
+.agiir-search-filterbox-container {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.agiir-filters-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.agiir-filters-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  /*top: 13px;*/
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: solid 1px #003e79;
+  background: #ffffff !important;
+}
+
+.checkmark-cat {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: solid 1px #003e79;
+  background: #ffffff !important;
+  
+}
+
+/* On mouse-over, add a grey background color */
+.agiir-filters-container:hover input ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.agiir-filters-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.agiir-filters-container .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 7px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.agiir-filters-menu {
+  max-height: 100vh;
+  height: auto;
+  overflow-y: hidden;
+}
+
+.agiir-filters-itemlist {
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 300px;
+}
+
+.agiir-filters-listButtons {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FILTERS CUSTOM */
+/* BOUTON SEARCH-FILTERS */
+.agiir-search-filterbar-filters-button {
+  color: white !important;
+  border: 1px solid #003e79 !important;
+  background: #003e79 !important;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.agiir-search-filterbar-filters-button:hover {
+  color: white !important;
+  border: 1px solid #003160 !important;
+  background: #003160 !important;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.agiir-search-filterbar-filters-button:active {
+  color: #003e79 !important;
+  border: 1px solid #003e79 !important;
+  background: white !important;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.agiir-search-filterbar-filters-button:focus {
+  color: #003e79 !important;
+  border: 1px solid #003e79 !important;
+  background: white !important;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.agiir-search-filterbar-filters-button-active {
+  color: #003e79 !important;
+  border: 1px solid #003e79 !important;
+  background: white !important;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.agiir-search-filterbar-filters-button-active:hover {
+  color: white !important;
+  border: 1px solid #003160 !important;
+  background: #003160 !important;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.agiir-search-filterbar-filters-button-active:active {
+  color: #003e79 !important;
+  border: 1px solid #003e79 !important;
+  background: white !important;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.agiir-search-filterbar-filters-button-active:focus {
+  color: #003e79 !important;
+  border: 1px solid #003e79 !important;
+  background: white !important;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+@media (min-width: var(--breakpoint-lg)) and (max-width: 1279px) {
+  /* Responsive de la barre de filtres */
+  .agiir-search-filterbar {
+    padding-left: calc((100% - var(--breakpoint-lg)) / 2);
+    padding-right: calc((100% - var(--breakpoint-lg)) / 2);
+  }
+  .agiir-search-filterbar {
+    background: aliceblue;
+  }
+  .agiir-search-filterbox-container {
+    background: bisque;
+  }
+  .agiir-search-filterbar-first-container {
+    background: lightcyan;
+  }
+}
+
+/* SEQENS CUSTOM - NEED FULL REFACTOR */
+
+.agiir-filters-listButtons.theme-seqens {
+  flex-direction: row;
+  padding: 5%;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.agiir-search-filterbar-filters-btn.theme-seqens {
+  border: none !important;
+  color: var(--secondary) !important;
+  width: auto;
+  cursor: pointer;
+}
+
+.agiir-search-filterbar-filters-btn-reset.theme-seqens {
+  color: var(--primary) !important;
+}
+
+/* FilterItemMobile Overlay Test */
+.agiir-filter-mobile-overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.agiir-filter-mobile-overlay-header {
+  height: 40px;
+  background: transparent;
+  border-bottom: 1px solid #c9caca;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.agiir-filter-mobile-overlay-header-quitBtn {
+  width: 40px;
+  height: 40px;
+  border-right: 1px solid #c9caca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.agiir-filters-itemlist.theme-seqens-mobile {
+  text-align: left;
+  padding: 15px;
+  max-height: none !important;
+}
+
+/*Style de la recherche*/
+
+.agiir-filters-item,
+.agiir-filters-item:hover,
+.agiir-filters-item:active,
+.agiir-filters-item:focus {
+  cursor: pointer;
+  color: #000000 !important;
+}
+
+.agiir-filter-mobile-overlay-footer .btn {
+  margin: 15px;
+}
+
+.agiir-search-filterbar-filters-btn.agiir-search-filterbar-filters-btn-reset.theme-seqens.theme-seqens-mobile {
+  margin-right: 10px;
+  transition: text-decoration 0.5s ease !important;
+}
+
+.agiir-search-filterbar-filters-btn.agiir-search-filterbar-filters-btn-reset.theme-seqens.theme-seqens-mobile:hover {
+  margin-right: 10px;
+  text-decoration: underline !important;
+}
+
+/* LIFERAY CONTEXT */
+/* En tant qu'admin, control menu du haut : il faut faire descendre l'overlay pour avoir le header de l'overlay */
+.has-control-menu .agiir-filter-mobile-overlay {
+  margin-top: 48px;
+}
+
+/* Sort dropdown */
+.agiir-sort-button,
+.agiir-sort-button:hover,
+.agiir-sort-button:active,
+.agiir-sort-button:focus {
+  background: transparent !important;
+  color: black !important;
+  border-width: 0px 1px 0px 1px !important;
+  border-radius: 0px !important;
+  width: 185px;
+  font-size: 14px;
+  border-color: #979797 !important;
+}
+
+.agiir-filters-right-block {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.agiir-sort-item,
+.agiir-sort-item:hover,
+.agiir-sort-item:active,
+.agiir-sort-item:focus {
+  color: black !important;
+  cursor: pointer;
+}

@@ -1,0 +1,320 @@
+:root {
+  --primary: #003e79;
+  --primary-hover: #003160;
+  --primary-active: #ffffff;
+  --primary-text-active: #003e79;
+  --primary-text-default: #ffffff;
+  --secondary: #e5224b;
+  --secondary-hover: #b81439;
+  --secondary-active: #ffffff;
+  --secondary-text-active: #e5224b;
+  --secondary-text-default: #ffffff;
+  --seqens-success: #039a8b;
+  --seqens-info: #f63;
+  --seqens-warning: #fcbc0f;
+  --seqens-light: #f9fafe;
+  --seqens-dark: #333;
+  --content-left-padding: 10%;
+  --green: #039a8b;
+  --green-hover: #016d62;
+  --green-active: #ffffff;
+  --green-text-active: #039a8b;
+  --green-text-default: #ffffff;  
+  --yellow: #fcbc0f;
+  --yellow-hover: #fb9744;
+  --yellow-active: #ffffff;
+  --yellow-text-active: #fcbc0f;
+  --yellow-text-default: #ffffff;  
+}
+
+/*Back button*/
+.back-btn {
+  color: var(--secondary);
+}
+
+/* All page height and padding */
+.page {
+  height: 100%;
+}
+.content {
+  padding: 10px var(--content-left-padding);
+  height: 100%;
+}
+
+/* Table */
+.table .th1 {
+  width: 30%;
+}
+
+.table .th2 {
+  width: 70%;
+}
+
+/*Calendar*/
+.agiir-calendar-date div {
+  z-index: 1;
+}
+
+/* COMPONENT: ImageUpload */
+.agiir-component-imageupload {
+  margin: 1%;
+}
+
+.agiir-component-imageupload-imgCanvas {
+  width: 200px;
+  border-radius: 8px;
+  margin: 1%;
+}
+
+.agiir-component-imageupload-btnMargin {
+  margin-right: 1%;
+}
+
+.agiir-component-dummydata .agiir-component-dummydata-img {
+  margin: 1%;
+}
+
+/* Modal css */
+.modal-header {
+  border-bottom: 1px solid var(--primary);
+}
+
+.modal-message {
+  margin-top: 15px;
+}
+
+.modal {
+  width: 100%;
+  overflow: auto;
+}
+
+/* Title & description blocks */
+.title-block {
+  padding: 16px 16px 16px 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.collapsed-title {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 16px;
+}
+
+.description-block {
+  width: 70%;
+  float: left;
+}
+
+.agiir-subtitle {
+  font-size: 32px;
+  font-family: "BarlowSemiCondensed", sans-serif;
+}
+
+/* Alert css */
+.no-app-alert {
+  text-align: center;
+}
+
+/* Form */
+.form-action-button {
+  margin-right: 20px;
+}
+
+.form-action-buttons {
+  width: 100%;
+  padding: 0px 10px 10px 0px;
+}
+
+.form-group .label {
+  color: var(--primary);
+}
+
+/* Liste des Apllications */
+/* Custom Seqens : width auto au lieu de 100% */
+.list-group-item {
+  width: auto !important;
+}
+
+/* MATERIAL ICONS */
+/* fallback */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+    format("woff2");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.breakpoint__xlarge-only {
+  height: 93% !important;
+}
+
+.button-icon-layout {
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0 10px 0 10px;
+}
+
+.button-icon-layout.button-icon-layout-icon {
+  color: var(--primary);
+}
+
+.breakpoint__large-up {
+  display: block !important;
+}
+
+.div-breakpoint {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* RESPONSIVE */
+
+.responsive-container {
+  padding: 16px;
+}
+
+@media (min-width: 1440px) {
+  .responsive-container {
+    padding-left: calc((100vw - 1088px) / 2 + 16px);
+    padding-right: calc((100vw - 1088px) / 2 + 16px);
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .responsive-container {
+    padding-left: calc((100vw - 1088px) / 2 + 16px);
+    padding-right: calc((100vw - 1088px) / 2 + 16px);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  .responsive-container {
+    padding-left: calc((100vw - 992px) / 2 + 16px);
+    padding-right: calc((100vw - 992px) / 2 + 16px);
+  }
+}
+
+/* MOBILE BREAKPOINTS */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Responsive des diff�rentes parties de la page */
+  .responsive-container {
+    padding-left: calc((100vw - 768px) / 2 + 16px);
+    padding-right: calc((100vw - 768px) / 2 + 16px);
+  }
+
+  .agiir-search-filtrerpar-text {
+    display: none;
+  }
+
+  .home-header p {
+    display: none;
+  }
+
+  .home-header div {
+    display: none;
+  }
+
+  .small-list-image {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .card-image {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  /* Bouton changer affichage disparait */
+  #buttonLayoutChange.button-icon-layout {
+    display: none !important;
+  }
+
+  /* Data list: pas de padding du content */
+  .responsive-container.content {
+    padding: 0 !important;
+  }
+
+  /* Data list: pas de border radius (liste carr�e et items coll�s sur la hauteur) */
+  .list-group-item {
+    border-radius: 0px !important;
+    margin: 0px !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  /* Responsive des diff�rentes parties de la page */
+  .responsive-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .agiir-search-filtrerpar-text {
+    display: none;
+  }
+
+  .home-header p {
+    display: none;
+  }
+
+  .home-header div {
+    display: none;
+  }
+
+  .small-list-image {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .card-image {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  /* Bouton changer affichage disparait */
+  #buttonLayoutChange.button-icon-layout {
+    display: none !important;
+  }
+
+  /* Data list: pas de padding du content */
+  .responsive-container.content {
+    padding: 0 !important;
+  }
+
+  /* Data list: pas de border radius (liste carr�e et items coll�s sur la hauteur) */
+  .list-group-item {
+    border-radius: 0px !important;
+    margin: 0px !important;
+  }
+}
+
+/*nouveau*/
+.table-bordered thead th {
+  border-color: lightgray;
+}
+
+
+/*modifié*/
+.table-striped thead tr th {
+  text-align: left;
+}

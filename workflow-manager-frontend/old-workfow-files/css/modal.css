@@ -1,0 +1,107 @@
+:root {
+    --primary-semi-transparent: rgba(0,62,121,0.6);
+    --info: #ecf1f7;
+    --info-hover: #b6c9e0;
+    --info-active: #cac980;
+    --shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
+    --shadow-light: 0 .5rem 1rem rgba(125,125,125,0.15);
+	--rounded-light: 16px;
+	--primary: #003E79;
+	--primary-hover: #003160;
+	--primary-active: #FFFFFF;
+	--primary-text-active: #003E79;
+	--primary-text-default: #FFFFFF;
+	--secondary: #E5224B;
+	--secondary-hover: #B81439;
+	--secondary-active: #FFFFFF;
+	--secondary-text-active: #E5224B;
+	--secondary-text-default: #FFFFFF;
+	--content-left-padding: 10%;
+}
+
+.agiir-block-input{
+	margin-top :3%;
+	margin-left :4%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    margin-bottom: 5px;
+}
+.agiir-workflow-input{
+	margin-left: 2%;
+    margin-top: 1%;
+	max-width: 95%;
+}
+.label-input{
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-bottom: 5px;
+	color : var(--primary) ;
+}
+
+#check-auto-task{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#Label{
+	color: #e5224b;
+	margin-left: 9px;
+}
+
+.buttons-task-add-delete{
+    max-width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.modal-header-buttons{
+	margin-left: 5px;
+}
+
+td , tr   { text-align: center; }
+th , thead{ text-align: center;}
+
+
+
+.check-box{
+	float: right;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.agiir-titre-tuto{
+	font-family: Verdana, sans-serif;
+	color: var(--primary);
+	font-style: oblique;
+	
+	text-align: center;
+}
+
+.agiir-texte-tuto{
+	font-size: medium;
+	text-align: justify;
+}
+
+em{
+	color: var(--secondary);
+}
+
+strong {
+	color: var(--primary);
+}
+
+/* Modal css */
+.modal-header {
+	border-bottom: 1px solid var(--primary);
+	padding: 0px;
+	margin-bottom: 16px;
+  }
+  
+  .modal-header h2{
+	font-size: 28px;
+	font-weight: 600;
+	color: var(--primary);
+  }

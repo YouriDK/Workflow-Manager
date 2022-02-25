@@ -1,0 +1,319 @@
+
+
+.button-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px !important;
+}
+
+.nav-button-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-button {
+  border: 0 !important;
+  color: var(--secondary) !important;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.nav-button-text {
+  text-transform: uppercase;
+}
+
+.nav-button-text:hover {
+  text-decoration: underline;
+}
+
+.agiir-app-mobile-nav-dropdown {
+  margin: 10px;
+}
+
+/** secondary outline button **/
+.btn-outline-secondary,
+.btn-outline-secondary:active,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+  background-color: #ffffff !important;
+}
+
+/** secondary dropdown-item **/
+.dropdown-item,
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
+  color: var(--secondary) !important;
+}
+
+/* BOUTON SEARCH-FILTERS */
+.agiir-search-topbar-filters-button {
+  color: white !important;
+  border: 1px solid #003e79 !important;
+  background: #003e79 !important;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+
+.agiir-search-topbar-filters-button:hover {
+  color: white !important;
+  border: 1px solid #003160 !important;
+  background: #003160 !important;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+
+.agiir-search-topbar-filters-button:active {
+  color: #003e79 !important;
+  border: 1px solid #003e79 !important;
+  background: white !important;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+
+.agiir-search-topbar-filters-button:focus {
+  color: #003e79 !important;
+  border: 1px solid #003e79 !important;
+  background: white !important;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+
+.agiir-search-topbar-filters-button-active {
+  color: #003e79 !important;
+  border: 1px solid #003e79 !important;
+  background: white !important;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+
+.agiir-search-topbar-filters-button-active:hover {
+  color: white !important;
+  border: 1px solid #003160 !important;
+  background: #003160 !important;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+
+.agiir-search-topbar-filters-button-active:active {
+  color: #003e79 !important;
+  border: 1px solid #003e79 !important;
+  background: white !important;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+
+.agiir-search-topbar-filters-button-active:focus {
+  color: #003e79 !important;
+  border: 1px solid #003e79 !important;
+  background: white !important;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+
+/* BOUTON SECONDARY */
+.btn-secondary {
+  color: var(--secondary-text-default) !important;
+  border: solid 1px var(--secondary) !important;
+  background: var(--secondary) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-secondary:hover {
+  color: var(--secondary-text-default) !important;
+  border: solid 1px var(--secondary-hover) !important;
+  background: var(--secondary-hover) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-secondary:active {
+  color: var(--secondary-text-active) !important;
+  border: solid 1px var(--secondary) !important;
+  background: white !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-secondary:focus {
+  color: var(--secondary-text-active) !important;
+  border: solid 1px var(--secondary) !important;
+  background: white !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+
+/*.btn-secondary:not([disabled]):not(.disabled):active {
+  color: var(--secondary-text-active) !important;
+  border: solid 1px var(--secondary) !important;
+  background: var(--secondary-active) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}*/
+/* BOUTON PRIMARY */
+.btn-primary {
+  color: var(--primary-text-default) !important;
+  border: solid 1px var(--primary) !important;
+  background: var(--primary) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-primary:hover {
+  color: var(--primary-text-default) !important;
+  border: solid 1px var(--primary-hover) !important;
+  background: var(--primary-hover) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-primary:active {
+  color: var(--primary-text-active) !important;
+  border: solid 1px var(--primary) !important;
+  background: var(--primary-active) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-primary:focus {
+  color: var(--primary-text-active) !important;
+  border: solid 1px var(--primary) !important;
+  background: var(--primary-active) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+
+/* success button */
+.btn-success {
+  color: var(--primary-text-default) !important;
+  border: solid 1px var(--seqens-success) !important;
+  background: var(--seqens-success) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-success:hover {
+  color: var(--primary-text-default) !important;
+  border: solid 1px var(--seqens-success) !important;
+  background: var(--seqens-success) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-success:active {
+  color: var(--primary-text-default) !important;
+  border: solid 1px var(--seqens-success) !important;
+  background: var(--seqens-success) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-success:focus {
+  color: var(--primary-text-default) !important;
+  border: solid 1px var(--seqens-success) !important;
+  background: var(--seqens-success) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+
+/* warning button */
+.btn-warning {
+  color: var(--primary-text-default) !important;
+  border: solid 1px var(--seqens-warning) !important;
+  background: var(--seqens-warning) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-warning:hover {
+  color: var(--primary-text-default) !important;
+  border: solid 1px var(--seqens-warning) !important;
+  background: var(--seqens-warning) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-warning:active {
+  color: var(--primary-text-default) !important;
+  border: solid 1px var(--seqens-warning) !important;
+  background: var(--seqens-warning) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-warning:focus {
+  color: var(--primary-text-default) !important;
+  border: solid 1px var(--seqens-warning) !important;
+  background: var(--seqens-warning) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+
+/**Rounded btn**/
+.rounded-btn,
+.rounded-btn:hover,
+.rounded-btn:active,
+.rounded-btn:focus {
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.rounded-btn i {
+  display: flex !important;
+}
+
+/* BOUTON yellow */
+.btn-yellow {
+  color: var(--yellow-text-default) !important;
+  border: solid 1px var(--yellow) !important;
+  background: var(--yellow) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-yellow:hover {
+  color: var(--yellow-text-default) !important;
+  border: solid 1px var(--yellow-hover) !important;
+  background: var(--yellow-hover) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-yellow:active {
+  color: var(--yellow-text-active) !important;
+  border: solid 1px var(--yellow) !important;
+  background: var(--yellow-active) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-yellow:focus {
+  color: var(--yellow-text-active) !important;
+  border: solid 1px var(--yellow) !important;
+  background: var(--yellow-active) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+
+/* BOUTON green */
+.btn-green {
+  color: var(--green-text-default) !important;
+  border: solid 1px var(--green) !important;
+  background: var(--green) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-green:hover {
+  color: var(--green-text-default) !important;
+  border: solid 1px var(--green-hover) !important;
+  background: var(--green-hover) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-green:active {
+  color: var(--green-text-active) !important;
+  border: solid 1px var(--green) !important;
+  background: var(--green-active) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
+.btn-green:focus {
+  color: var(--green-text-active) !important;
+  border: solid 1px var(--green) !important;
+  background: var(--green-active) !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+}
