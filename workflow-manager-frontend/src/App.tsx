@@ -1,21 +1,21 @@
 import { FC } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HeaderNavigation from './components/HeaderNavigation';
-import Designer from './Pages/Designer';
-import History from './Pages/History';
-import Home from './Pages/Home';
-import Infos from './Pages/Infos';
-import Node from './Pages/Node';
-import Options from './Pages/Options';
-import Tuto from './Pages/Tuto';
-import User from './Pages/User';
+import Header from './components/Header';
+import Designer from './pages/Designer';
+import History from './pages/History';
+import Home from './pages/Home';
+import Infos from './pages/Infos';
+import Node from './pages/Node';
+import Options from './pages/Options';
+import Tuto from './pages/Tuto';
+import User from './pages/User';
 import './scss/root.scss';
 
 const App: FC<any> = (): JSX.Element => {
   console.log('APP');
   return (
     <BrowserRouter>
-      <HeaderNavigation />
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/designer' element={<Designer />} />

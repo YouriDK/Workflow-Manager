@@ -26,7 +26,7 @@ export const HeaderNavigationIntels: NavBarDataProps[] = [
   { title_FR: 'Options', title_EN: 'Options', link: '/options' },
 ];
 
-const HeaderNavigation: FC<any> = (): JSX.Element => {
+const Header: FC<any> = (): JSX.Element => {
   const langage = useSelector((state: any) => state.lang);
   const { lang } = langage;
   const dispatch = useDispatch();
@@ -100,4 +100,4 @@ const HeaderNavigation: FC<any> = (): JSX.Element => {
   );
 };
 
-export default HeaderNavigation;
+export default Header;
