@@ -5,6 +5,7 @@ import createEngine, {
   DiagramModel,
 } from '@projectstorm/react-diagrams';
 import { FC } from 'react';
+import { DemoCanvasWidget } from '../DemoCanvasWidget';
 import { AdvancedLinkFactory, AdvancedPortModel } from './CustomLinkModel';
 
 const CustomLinkExample: FC<any> = (): JSX.Element => {

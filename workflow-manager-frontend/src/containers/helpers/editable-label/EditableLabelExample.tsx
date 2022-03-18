@@ -8,6 +8,7 @@ import { CanvasWidget } from '@projectstorm/react-canvas-core';
 
 import { EditableLabelFactory } from './EditableLabelFactory';
 import { EditableLabelModel } from './EditableLabelModel';
+import { DemoCanvasWidget } from '../DemoCanvasWidget';
 
 const EditableLabelExample: FC<any> = (): JSX.Element => {
   const engine = createEngine();

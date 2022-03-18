@@ -30,7 +30,7 @@ export class DefaultState extends State<DiagramEngine> {
     this.registerAction(
       new Action({
         type: InputType.MOUSE_DOWN,
-        fire: (event: ActionEvent<MouseEvent>) => {
+        fire: (event: ActionEvent<MouseEvent> | any) => {
           const element = this.engine
             .getActionEventBus()
             .getModelForEvent(event);
@@ -55,7 +55,7 @@ export class DefaultState extends State<DiagramEngine> {
     this.registerAction(
       new Action({
         type: InputType.TOUCH_START,
-        fire: (event: ActionEvent<TouchEvent>) => {
+        fire: (event: ActionEvent<TouchEvent | any>) => {
           this.transitionWithEvent(new DragCanvasState(), event);
         },
       })
@@ -64,7 +64,7 @@ export class DefaultState extends State<DiagramEngine> {
     this.registerAction(
       new Action({
         type: InputType.MOUSE_UP,
-        fire: (event: ActionEvent<MouseEvent>) => {
+        fire: (event: ActionEvent<MouseEvent> | any) => {
           const element = this.engine
             .getActionEventBus()
             .getModelForEvent(event);

@@ -32,6 +32,7 @@ const CustomeNodeExample: React.FC<any> = (): JSX.Element => {
   //3-A) create a default node
   var node1 = new DefaultNodeModel('Node 1', 'rgb(0,192,255)');
   var port1 = node1.addOutPort('Out');
+  const sqd: any = () => {};
   node1.setPosition(100, 200);
 
   //3-B) create our new custom node

@@ -1,15 +1,11 @@
-import createEngine, {
-  DiagramModel,
-  DefaultNodeModel,
-  DefaultPortModel,
+import {
   DefaultLinkFactory,
   DefaultLinkModel,
   DefaultLinkWidget,
+  DefaultPortModel,
 } from '@projectstorm/react-diagrams';
 import { LinkWidget, PointModel } from '@projectstorm/react-diagrams-core';
 import * as React from 'react';
-import { CanvasWidget } from '@projectstorm/react-canvas-core';
-import { DemoCanvasWidget } from '../helpers/DemoCanvasWidget';
 import { MouseEvent } from 'react';
 
 export class AdvancedLinkModel extends DefaultLinkModel {
@@ -22,7 +18,7 @@ export class AdvancedLinkModel extends DefaultLinkModel {
 }
 
 export class AdvancedPortModel extends DefaultPortModel {
-  createLinkModel(): AdvancedLinkModel | null {
+  createLinkModel(): AdvancedLinkModel | null | any {
     return new AdvancedLinkModel();
   }
 }

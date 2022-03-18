@@ -15,8 +15,8 @@ import { MouseEvent, KeyboardEvent } from 'react';
  * This state is controlling the creation of a link.
  */
 export class CreateLinkState extends State<DiagramEngine> {
-  sourcePort: PortModel;
-  link: LinkModel;
+  sourcePort: PortModel | any;
+  link: LinkModel | any;
 
   constructor() {
     super({ name: 'create-new-link' });
@@ -24,7 +24,7 @@ export class CreateLinkState extends State<DiagramEngine> {
     this.registerAction(
       new Action({
         type: InputType.MOUSE_UP,
-        fire: (actionEvent: ActionEvent<MouseEvent>) => {
+        fire: (actionEvent: ActionEvent<MouseEvent> | any) => {
           const element = this.engine
             .getActionEventBus()
             .getModelForEvent(actionEvent);
@@ -74,7 +74,7 @@ export class CreateLinkState extends State<DiagramEngine> {
     this.registerAction(
       new Action({
         type: InputType.MOUSE_MOVE,
-        fire: (actionEvent: ActionEvent<React.MouseEvent>) => {
+        fire: (actionEvent: ActionEvent<React.MouseEvent> | any) => {
           if (!this.link) return;
           const { event } = actionEvent;
           this.link.getLastPoint().setPosition(event.clientX, event.clientY);
@@ -86,7 +86,7 @@ export class CreateLinkState extends State<DiagramEngine> {
     this.registerAction(
       new Action({
         type: InputType.KEY_UP,
-        fire: (actionEvent: ActionEvent<KeyboardEvent>) => {
+        fire: (actionEvent: ActionEvent<KeyboardEvent> | any) => {
           // on esc press remove any started link and pop back to default state
           if (actionEvent.event.keyCode === 27) {
             this.link.remove();

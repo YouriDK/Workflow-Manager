@@ -1,3 +1,5 @@
+import gsap from 'gsap';
+
 let node1: any, node2: any, node3: any, node4: any, engine: any;
 export var interval = setInterval(() => {
   [node1, node2, node3, node4].map((node) => {

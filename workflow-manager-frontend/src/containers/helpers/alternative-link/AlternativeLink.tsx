@@ -6,8 +6,9 @@ import createEngine, {
 import { CanvasWidget } from '@projectstorm/react-canvas-core';
 
 import { DefaultState } from './DefaultState';
+import { DemoCanvasWidget } from '../DemoCanvasWidget';
 
-const AlternativeLink: FC<any> = (): JSX.Element => {
+const AlternativeLink: React.FC<any> = (): JSX.Element => {
   const engine = createEngine();
   const model = new DiagramModel();
 

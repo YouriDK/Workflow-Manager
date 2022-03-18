@@ -13,26 +13,26 @@ const Designer: FC<any> = (): JSX.Element => {
   const model = new DiagramModel();
 
   //3-A) create a default node
-  var node1 = new DefaultNodeModel('Node 1', 'rgb(0,192,255)');
-  var port1 = node1.addOutPort('Out');
+  const node1 = new DefaultNodeModel('Node 1', 'rgb(0,192,255)');
+  const port1 = node1.addOutPort('Out');
   node1.setPosition(100, 100);
 
   //3-B) create another default node
-  var node2 = new DefaultNodeModel('Node 2', 'rgb(192,255,0)');
+  const node2 = new DefaultNodeModel('Node 2', 'rgb(192,255,0)');
 
-  var port2 = node2.addInPort('In');
+  const port2 = node2.addInPort('In');
   node2.setPosition(400, 100);
 
   //3-C) create another default node
-  var node3 = new DefaultNodeModel('Node 3', 'rgb(192,255,0)');
+  const node3 = new DefaultNodeModel('Node 3', 'rgb(192,255,0)');
   node2.setPosition(200, 300);
 
   //3-D) create another default node
-  var node4 = new DefaultNodeModel('Node 4', 'rgb(192,255,0)');
+  const node4 = new DefaultNodeModel('Node 4', 'rgb(192,255,0)');
   node2.setPosition(400, 400);
 
   //3-C) link the 2 nodes together
-  var link1 = port1.link(port2);
+  const link1 = port1.link(port2);
 
   //4) add the models to the root graph
   model.addAll(node1, node2, link1, node3, node4);
