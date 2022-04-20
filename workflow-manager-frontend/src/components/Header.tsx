@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import '../scss/root.scss';
 import '../scss/Navbar.scss';
-import { setLang } from '../redux/actions';
+import { setLang } from '../Middleware/actions';
 export interface NavBarDataProps {
   title_FR: string;
   title_EN: string;
