@@ -1,4 +1,4 @@
-import { SET_LANG } from './constants';
+import { SET_LANG } from '../../constants';
 
 export const setLang = (lang: string) => {
   return {

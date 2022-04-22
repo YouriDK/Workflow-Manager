@@ -3,6 +3,8 @@
 # dependencies
 /workflow-manager-frontend/node_modules
 /workflow-manager-backend/node_modules
+/workflow-manager-backend/.env
+/workflow-manager-backend/package-lock.json
 /workflow-manager-frontend/.pnp
 /workflow-manager-frontend/package-lock.json
 .pnp.js

@@ -29,7 +29,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - MongoDB/Express -> Essayer de faire du Jest Non ?
 
 # Plan Organization
-
+Pour faire le XML : xmlbuilder
 Table DB :
 
 - Wf | Nodes | Link | Draft ? | Notifications | Transitions | User ( Google Auth) | XML
@@ -60,9 +60,13 @@ GitHub : https://github.com/projectstorm/react-diagrams
 Evolution : https://openbase.com/js/@projectstorm/react-diagrams
 New Docs : https://projectstorm.gitbook.io/react-diagrams/
 Examples : http://projectstorm.cloud/react-diagrams/?path=/story/external-libs--gsap-animation
+NestJS :   https://nestjs.com/
 
 # TODO
 
 Commencer l'implémentation de différents type de noeuds et leur configuration
 
 # Evolutions
+
+# NestJS knowledge
+nest g resource [name] -> Créer tous les fichiers nécessaire pour configurer un élémentclear
