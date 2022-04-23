@@ -73,11 +73,14 @@ If you'd like to join them, please [read more here](https://docs.nestjs.com/supp
 
 Nest is [MIT licensed](LICENSE).
 
+# NestJS knowledge
+nest g resource [name] -> Créer tous les fichiers nécessaire pour configurer un élémentclear
+
 # Knowledge
 
 It does the work in the database, Controller -> Service -> DTO
 
 Il faut dessinner dans le schema,les entités, les dto et les interfaces.
 NODE_ENV=dev est nécéssaire pour que MongoDB se connecte
-
-// TODO Mettre en place un Jeu de données pour tester
+* Mettre en place un Jeu de données pour tester
+// TODO Mettre en place les erreurs puis faires les nodes

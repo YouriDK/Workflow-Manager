@@ -32,21 +32,21 @@ export class WorkflowController {
 
   @MessagePattern('findOneWorkflow')
   @Get(':id')
-  public async findOne(@Param() params: any) {
+  public async findOne(@Param('id') id: string) {
     console.log('🤞 Controllers -> findOne wf 🤞');
-    return await this.workflowService.findOne(params.id);
+    return await this.workflowService.findOne(id);
   }
 
   @MessagePattern('updateWorkflow')
   @Patch(':id')
-  public async update(@Param() params: any, @Body() wfDatas: WorkflowDto) {
+  public async update(@Param('id') id: string, @Body() wfDatas: WorkflowDto) {
     console.log('🤞 Controllers -> UpdateOne wf 🤞', wfDatas);
-    return await this.workflowService.update(params.id, wfDatas);
+    return await this.workflowService.update(id, wfDatas);
   }
 
   @MessagePattern('removeWorkflow')
   @Delete(':id')
-  public async remove(@Param() params: any) {
-    return this.workflowService.remove(params.id);
+  public async remove(@Param('id') id: string) {
+    return this.workflowService.remove(id);
   }
 }

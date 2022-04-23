@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
@@ -10,6 +10,7 @@ import {
   Workflow,
   WorkflowSchema,
 } from './app/workflow/schema/workflow.schema';
+import { isAuth } from './utils/Auth';
 
 @Module({
   imports: [
@@ -30,11 +31,8 @@ import {
 
 // * To apply a MiddleWare
 // * https://docs.nestjs.com/middleware
-// export class AppModule implements NestModule {
-//   configure(consumer: MiddlewareConsumer) {
-//     consumer
-//       .apply(isAuth)
-//       .forRoutes('cats');
-//   }
-// }
-export class AppModule {}
+export class AppModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer.apply(isAuth).forRoutes('workflows');
+  }
+}

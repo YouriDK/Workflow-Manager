@@ -1,14 +1,9 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import * as mongoose from 'mongoose';
 import { Document } from 'mongoose';
-
 export type WorkflowDocument = Workflow & Document;
 
 @Schema()
 export class Workflow {
-  // @Prop({ type: mongoose.Types.ObjectId })
-  // public _id: string;
-
   @Prop()
   public name: string;
 
@@ -33,14 +28,11 @@ export class Workflow {
   @Prop()
   public extras: string;
 
-  public constructor(/*id?: string */) {
-    // if (id) {
-    //   this._id = id;
-    // }
+  public constructor() {
+    // * Something hehe
   }
 
   public fill(wf: {
-    // _id: string;
     name: string;
     created_at: Date;
     updated_at: Date;
@@ -50,8 +42,6 @@ export class Workflow {
     isFinished: boolean;
     extras: string;
   }): any {
-    console.log('fiill ->', wf);
-    // this._id = wf._id;
     this.name = wf.name;
     this.created_at = wf.created_at;
     this.updated_at = wf.updated_at;

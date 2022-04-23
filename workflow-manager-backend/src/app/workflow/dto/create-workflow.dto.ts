@@ -1,4 +1,4 @@
-import { IsString, IsDate, Allow } from 'class-validator';
+import { IsString, IsDate, Allow, IsEmail } from 'class-validator';
 import { Workflow } from '../schema/workflow.schema';
 
 export class WorkflowDto {
@@ -8,7 +8,7 @@ export class WorkflowDto {
   @IsDate() public updated_at!: Date;
   @Allow() public xml!: string;
   @Allow() public wf_object!: string;
-  @IsString() public user!: string;
+  @IsEmail() public user!: string;
   @IsString() public isFinished!: boolean;
   @Allow() public extras!: string;
   public constructor(workflow: Workflow) {

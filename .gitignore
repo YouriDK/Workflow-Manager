@@ -4,7 +4,7 @@
 /workflow-manager-frontend/node_modules
 /workflow-manager-backend/node_modules
 /workflow-manager-backend/.env
-/workflow-manager-backend/package-lock.json
+
 /workflow-manager-frontend/.pnp
 /workflow-manager-frontend/package-lock.json
 .pnp.js
@@ -25,3 +25,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+/package-lock.json
+workflow-manager-backend/package-lock.json

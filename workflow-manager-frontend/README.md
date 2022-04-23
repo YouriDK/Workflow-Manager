@@ -68,5 +68,4 @@ Commencer l'implémentation de différents type de noeuds et leur configuration
 
 # Evolutions
 
-# NestJS knowledge
-nest g resource [name] -> Créer tous les fichiers nécessaire pour configurer un élémentclear
+

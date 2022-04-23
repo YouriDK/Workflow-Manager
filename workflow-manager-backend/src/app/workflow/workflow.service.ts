@@ -3,6 +3,13 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { WorkflowDto } from './dto/create-workflow.dto';
 import { Workflow, WorkflowDocument } from './schema/workflow.schema';
+import {
+  DeleteWorkflowsFailed,
+  FindWorkflowsFailed,
+  GetAllWorkflowsFailed,
+  UpdateWorkflowsFailed,
+  WorkflowCreationFailed,
+} from './wf-errors';
 
 @Injectable()
 export class WorkflowService {
@@ -14,19 +21,28 @@ export class WorkflowService {
   async create(wfDatas: WorkflowDto): Promise<Workflow> {
     console.log('🤞 Service -> Create wf 🤞');
     const newWorkflow = new Workflow().fill(wfDatas);
-    const newBisWF = new this.workflow(newWorkflow);
-    return newBisWF.save();
+    const newWF = new this.workflow(newWorkflow);
+    if (!newWF) {
+      throw new WorkflowCreationFailed();
+    }
+    return newWF.save();
   }
 
   async findAll(): Promise<Workflow[]> {
     console.log('🤞 Service -> Get All wf 🤞');
     const wfs = this.workflow.find();
+    if (!wfs) {
+      throw new GetAllWorkflowsFailed();
+    }
     return wfs;
   }
 
   async findOne(id: string) {
     console.log('🤞 Service -> findOne wf 🤞', id);
     const wf = await this.workflow.findById(id);
+    if (!wf) {
+      throw new FindWorkflowsFailed(id);
+    }
     return wf;
   }
 
@@ -37,12 +53,18 @@ export class WorkflowService {
       { ...wfDatasUpdate },
       { new: true },
     );
+    if (!wfUpdated) {
+      throw new UpdateWorkflowsFailed(id);
+    }
     return wfUpdated;
   }
 
   async remove(id: string) {
     console.log('🤞 Service -> deleteOne wf 🤞');
     const del = await this.workflow.deleteOne({ _id: id });
+    if (!del) {
+      throw new DeleteWorkflowsFailed(id);
+    }
     return del;
   }
 }
