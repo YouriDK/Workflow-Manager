@@ -15,11 +15,7 @@ import { isAuth } from './utils/Auth';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
-    MongooseModule.forRoot(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      // * Pour enlever les warnings
-      useUnifiedTopology: true,
-    }),
+    MongooseModule.forRoot(process.env.MONGODB_URI, {}),
     WorkflowModule,
     MongooseModule.forFeature([
       { name: Workflow.name, schema: WorkflowSchema },
